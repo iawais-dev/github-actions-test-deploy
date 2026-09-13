@@ -1,0 +1,10 @@
+services:
+  my-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    container_name: my-test-app
+    ports: 
+      - "8080:8080"  
+    
